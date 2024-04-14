@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from "../assets/u2.jpg"
+import heroImage from "../assets/th.png";
 
 const HeroSection = () => {
   return (
@@ -20,7 +20,7 @@ const HeroSection = () => {
 
         {/* Image Section */}
         <div className="lg:w-1/3 w-full mt-8 lg:mt-0 h-[50%] rounded-[50%]  bg-white border-blue-200 overflow-hidden border-4  flex justify-center">
-          <img src='/src/assets/th.png' alt="Hero" />
+          <img src={heroImage} alt="Hero" />
         </div>
 
 
