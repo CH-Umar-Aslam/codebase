@@ -7,6 +7,8 @@ import HeroSection from './sections/HeroSection'
 import SkillsSection from './sections/SkillsSection'
 import ExperienceSection from './sections/ExperienceSection'
 import ProjectSection from './sections/ProjectSection'
+import FormSection from './sections/FormSection'
+import FooterSection from './sections/FooterSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +22,10 @@ function App() {
         <SkillsSection />
         <ExperienceSection />
         <ProjectSection />
-      </div></>
+        <FormSection />
+
+      </div>
+      <FooterSection /></>
   )
 }
 
