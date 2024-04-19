@@ -1,6 +1,6 @@
 import React from 'react';
 import heroImage from "../assets/th.png";
-
+import resume from "../assets/Resume.pdf"
 const HeroSection = () => {
   return (
     <div
@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="lg:w-1/2 lg:mr-8 flex flex-col items-center lg:items-start">
           <h1 className="text-4xl lg:text-6xl font-bold mb-4 text-center lg:text-left">Hello, I'm Umar Aslam</h1>
           <p className="text-lg lg:text-xl mb-8 text-center lg:text-left">FrontEnd Engineer</p>
-          <a download className="bg-blue-500 hover:bg-blue-600  font-bold py-3 px-6 rounded inline-block shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Download CV</a>
+          <a download="Resume_UmarAslam" href={resume} className="bg-blue-500 text-white hover:bg-blue-600  font-bold py-3 px-6 rounded inline-block shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Download CV</a>
         </div>
 
         {/* Image Section */}

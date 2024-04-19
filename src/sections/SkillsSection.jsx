@@ -66,10 +66,10 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="py-12 lg:px-0 mb-[8%] overflow-hidden bg-gray-100">
+    <section id="skillsection" className="py-12 lg:px-0 mb-[8%] overflow-hidden bg-gray-100">
       <div >
         <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-        <h2 className='rounded-lg  p-2 text-center bg-gray-200 text-green-700  '>Currently mastering Backend Development</h2>
+        <h2 className='rounded-lg  p-2 text-center bg-gray-200 text-green-700  '>Currently Learning Backend Development</h2>
         <Slider ref={sliderRef} {...settings} onClick={handleSliderClick} className="slick-slider ">
           {skills.map((skill, index) => (
             <div key={index} className="px-2 sm:px-1">

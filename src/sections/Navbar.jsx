@@ -4,9 +4,20 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollSection = (val) => {
+    if (val == "FS") {
+      document.getElementById("FTS").scrollIntoView()
+    }
+    else if (val == "SS") {
+      document.getElementById("skillsection").scrollIntoView()
+    }
+    else if (val == "ES") {
+      document.getElementById("experiencesection").scrollIntoView()
+    }
 
+  }
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-lg  ">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         <div className="flex items-center">
           <span className="font-bold text-lg">Portfolio</span>
@@ -29,25 +40,24 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden sm:flex space-x-4">
-          <a href="#services" className="text-gray-900 text-sm font-medium">Home</a>
-          <a href="#services" className="text-gray-900 text-sm font-medium">About Us</a>
-          <a href="#services" className="text-gray-900 text-sm font-medium">Services</a>
-          <a href="#contact" className="text-gray-900 text-sm font-medium">Contact Us</a>
+        <div className="hidden  sm:flex space-x-4 text-gray-900 text-sm font-medium">
+          <a onClick={() => scrollSection("ES")}>About Us</a>
+          <a onClick={() => scrollSection("SS")}>Services</a>
+          <a onClick={() => scrollSection("FS")} >Contact Us</a>
         </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`absolute   inset-0 sm:hidden transition-transform duration-300 ${isOpen ? 'translate-y-0 items-center justify-center top-12  z-10' : '-translate-y-full top-0   z-10'
+        className={`absolute   inset-0 sm:hidden transition-transform duration-300 ${isOpen ? 'translate-y-0 items-center justify-center top-14  z-10' : '-translate-y-full top-0   z-10'
           }`}
         id="mobile-menu"
       >
         <div className="px-2 pt-2  pb-3  w-full h-[43%] bg-gray-100 space-y-1">
-          <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
-          <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">About Us</a>
-          <a href="#services" className="text-gray-900 block px-3 py-2 text-base font-medium">Services</a>
-          <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">Contact Us</a>
+
+          <a onClick={() => scrollSection("ES")} className="text-gray-900 block px-3 py-2 text-base font-medium">About Us</a>
+          <a onClick={() => scrollSection("SS")} className="text-gray-900 block px-3 py-2 text-base font-medium">Services</a>
+          <a onClick={() => scrollSection("FS")} className="text-gray-900 block px-3 py-2 text-base font-medium">Contact Us</a>
         </div>
       </div>
     </nav>

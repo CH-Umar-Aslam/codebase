@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  scroll-behavior: smooth;
+}
 .hero-section{
   height : calc(100vh - 64px);
+}
+.scrollable-element {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }

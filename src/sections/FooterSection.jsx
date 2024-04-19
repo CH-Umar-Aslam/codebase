@@ -8,7 +8,7 @@ const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-blue-700 text-white py-6">
+    <footer id="FTS" className="bg-blue-600 text-white py-6">
       <div className="container mx-auto flex flex-row items-center justify-between px-4">
         <div className="flex items-center  lg:mb-0">
           <span className="text-lg mr-2"><CopyrightIcon /> | {currentYear}</span>
@@ -18,12 +18,10 @@ const FooterSection = () => {
           <a href="https://github.com/CH-Umar-Aslam/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
             <GitHubIcon />
           </a>
-          <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+          <a href="https://www.linkedin.com/in/ch-umar-aslam-b84686252" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
             <LinkedInIcon />
           </a>
-          <a href="chumaraslam22@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
-            <MailIcon />
-          </a>
+
         </div>
       </div>
     </footer>
