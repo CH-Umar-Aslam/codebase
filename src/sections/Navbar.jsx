@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import { MenuIcon } from '@heroicons/react/outline';
+import SegmentIcon from '@mui/icons-material/Segment';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
             <span className="sr-only">Open main menu</span>
             {/* <MenuIcon className="h-6 w-6" aria-hidden="true" />
              */}
-            <h1>Menu</h1>
+            <MenuIcon />
           </button>
         </div>
 
@@ -31,25 +32,26 @@ const Navbar = () => {
         <div className="hidden sm:flex space-x-4">
           <a href="#services" className="text-gray-900 text-sm font-medium">Home</a>
           <a href="#services" className="text-gray-900 text-sm font-medium">About Us</a>
-
           <a href="#services" className="text-gray-900 text-sm font-medium">Services</a>
           <a href="#contact" className="text-gray-900 text-sm font-medium">Contact Us</a>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="sm:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">Home </a>
-            <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">About Us</a>
-            <a href="#services" className="text-gray-900 block px-3 py-2 text-base font-medium">Services</a>
-            <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">Contact Us</a>
-          </div>
+      <div
+        className={`absolute   inset-0 sm:hidden transition-transform duration-300 ${isOpen ? 'translate-y-0 items-center justify-center top-12  z-10' : '-translate-y-full top-0   z-10'
+          }`}
+        id="mobile-menu"
+      >
+        <div className="px-2 pt-2  pb-3  w-full h-[43%] bg-gray-100 space-y-1">
+          <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
+          <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">About Us</a>
+          <a href="#services" className="text-gray-900 block px-3 py-2 text-base font-medium">Services</a>
+          <a href="#contact" className="text-gray-900 block px-3 py-2 text-base font-medium">Contact Us</a>
         </div>
-      )}
+      </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
