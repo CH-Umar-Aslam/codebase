@@ -18,7 +18,6 @@ function App() {
 
       <Navbar /><div className='container mx-auto'>
         <HeroSection />
-
         <SkillsSection />
         <ExperienceSection />
         <ProjectSection />

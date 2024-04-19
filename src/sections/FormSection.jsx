@@ -37,7 +37,7 @@ const FormSection = () => {
     <div className="flex flex-wrap sm:py-20"
     >
       <div className="w-full h-auto md:w-1/2 px-1 grid place-items-center">
-        <img src="https://media.istockphoto.com/id/1200374331/photo/microphone-with-contact-us-word-3d-rendering.jpg?s=612x612&w=0&k=20&c=ft13-yNGy732aI6FefuvttDNXkOcPC4ULnsJs6eOhaw=" alt="Contact" className="object-cover w-full h-auto md:h-full" />
+        <img src="https://media.istockphoto.com/id/1200374331/photo/microphone-with-contact-us-word-3d-rendering.jpg?s=612x612&w=0&k=20&c=ft13-yNGy732aI6FefuvttDNXkOcPC4ULnsJs6eOhaw=" alt="Contact" className="object-fill   w-full h-auto md:h-full" />
       </div>
       <div className="w-full md:w-1/2 h-full px-4 md:px-8">
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
