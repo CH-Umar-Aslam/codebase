@@ -26,8 +26,12 @@ const SkillsSection = () => {
     { name: 'Node.js', description: 'Skilled in Node.js for server-side app development, with event-driven architecture, async programming, and package management.' },
     { name: 'Express.js', description: 'Experienced in creating RESTful APIs and web servers using Express.js, including routing, middleware, and error handling.' },
     { name: 'Data Modeling', description: 'Skilled in designing data models for databases, including entity-relationship diagrams (ERD), database normalization, and database schema design.' },
+
     { name: 'REST API', description: 'Proficient in designing and implementing RESTful APIs, including defining endpoints, handling HTTP methods, and data serialization.' },
-    { name: 'Fluent Communicator', description: 'Strong communication skills, both written and verbal, with the ability to effectively convey technical concepts and collaborate with team members.' },
+    { name: 'Effective Communication', description: 'Strong communication skills, both written and verbal, with the ability to effectively convey technical concepts and collaborate with team members.' },
+    { name: 'MongoDB', description: 'Experience working with MongoDB databases, including data modeling, querying, and aggregation.' },
+
+
   ];
 
 
@@ -69,7 +73,7 @@ const SkillsSection = () => {
     <section id="skillsection" className="py-12 lg:px-0 mb-[8%] overflow-hidden bg-gray-100">
       <div >
         <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-        <h2 className='rounded-lg  p-2 text-center bg-gray-200 text-green-700  '>Currently Learning Backend Development</h2>
+        <h2 className='rounded-lg font-medium m-2 p-2 sm:p-2 text-center bg-gray-200 text-green-700  '>Currently Mastering Mern Stack</h2>
         <Slider ref={sliderRef} {...settings} onClick={handleSliderClick} className="slick-slider ">
           {skills.map((skill, index) => (
             <div key={index} className="px-2 sm:px-1">
