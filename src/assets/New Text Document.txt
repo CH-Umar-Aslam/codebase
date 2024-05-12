@@ -1,0 +1,7 @@
+	body {
+				background: linear-gradient(
+					rgb(47, 47, 47),
+					#045490
+				);
+				color: white;
+			}

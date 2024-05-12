@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,6 +10,9 @@ export default {
       screens: {
         'xs': '310px',
 
+      },
+      fontFamily: {
+        Poppins: "Reddit-Sans"
       }
     },
   },

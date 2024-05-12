@@ -5,6 +5,9 @@ import SkillCard from '../components/SkillCard'; // Assuming you have a SkillCar
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Marquee from 'react-fast-marquee';
+import "../App.css"
+
 
 const SkillsSection = () => {
   // List of skills
@@ -34,6 +37,18 @@ const SkillsSection = () => {
 
   ];
 
+  const backEndLogos = [
+    { name: "Snort" },
+    { name: "FireWal" },
+    { name: "Wireshark" },
+    { name: "Nmap" },
+    { name: "Metaspilot" },
+    { name: "Azur" },
+    { name: "sync" },
+    { name: "cualys" },
+    { name: "splunk" },
+    { name: "Nessus" },
+  ];
 
   const sliderRef = useRef();
 
@@ -70,19 +85,60 @@ const SkillsSection = () => {
   };
 
   return (
-    <section id="skillsection" className="py-12 lg:px-0 mb-[8%] overflow-hidden bg-gray-100">
+    <section id="skillsection" className="py-12 lg:px-0 rounded-lg mb-[8%] overflow-hidden bg-[#1a2e3d]">
       <div >
         <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-        <h2 className='rounded-lg font-medium m-2 p-2 sm:p-2 text-center bg-gray-200 text-green-700  '>Currently Mastering Mern Stack</h2>
-        <Slider ref={sliderRef} {...settings} onClick={handleSliderClick} className="slick-slider ">
-          {skills.map((skill, index) => (
-            <div key={index} className="px-2 sm:px-1">
-              <SkillCard skill={skill} />
-            </div>
-          ))}
-        </Slider>
+        <h2 className='rounded-lg font-medium m-2 p-2 sm:p-2 text-center bg-[#223a4b] text-green-600  '>Currently Mastering Mern Stack</h2>
+
       </div>
-    </section>
+
+      <div className="container mx-auto">
+
+        <Marquee speed={120} className='mt-4' direction="left" gradientColor='#223a4b' gradientWidth={20} gradient>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-fuchsia-400">HTML</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-purple-600">CSS</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-amber-200">JavaScript</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-blue-500">React Js</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-green-500">Tailwind Css</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-yellow-400">es6+</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-red-300">axios</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-cyan-400">Redux</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-fuchsia-400">HTML</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-purple-600">CSS</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-amber-200">JavaScript</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-blue-500">React Js</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-green-500">Tailwind Css</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-yellow-400">es6+</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-red-300">axios</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-cyan-400">Redux</p>
+        </Marquee>
+
+
+        <Marquee className='' speed={110} direction="right" gradientColor='#223a4b' gradientWidth={20} gradient>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-fuchsia-400">Node Js</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-teal-400">Express Js</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-green-500">MongoDB</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-sky-400">Data Modeling</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-yellow-400">Rest API's</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-lime-600">API Integration</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-purple-700">OOP</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-sky-500">Deployment</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-fuchsia-400">Node Js</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-teal-400">Express Js</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-green-500">MongoDB</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-sky-400">Data Modeling</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-yellow-400">Rest API's</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-lime-600">API Integration</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-purple-700">OOP</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-sky-500">Deployment</p>
+
+        </Marquee>
+
+
+      </div>
+
+    </section >
+
   );
 };
 

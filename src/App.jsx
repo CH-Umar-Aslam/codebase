@@ -15,7 +15,7 @@ function App() {
   return (
     <>
 
-      <Navbar /><div className='container mx-auto'>
+      <Navbar /><div className='sm:container mx-4 sm:mx-auto'>
         <HeroSection />
         <SkillsSection />
         <ExperienceSection />
