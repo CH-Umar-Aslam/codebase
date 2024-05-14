@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from "../assets/logo.png"
 import SegmentIcon from '@mui/icons-material/Segment';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -18,9 +19,9 @@ const Navbar = () => {
   }
   return (
     <nav className="bg-[#183247]  shadow-2xl shadow-yellow-100  ">
-      <div className="max-w-7xl mx-auto px-4  flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-10 flex justify-between items-center h-16">
         <div className="flex items-center">
-          <span className="font-bold text-lg">Portfolio</span>
+          <img src={logo} className="font-bold w-24 mix-blend-screen h-16 bg-transparent text-lg" />
         </div>
 
         {/* Mobile Menu Icon */}
@@ -32,7 +33,7 @@ const Navbar = () => {
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only ">Open main menu</span>
             {/* <MenuIcon className="h-6 w-6" aria-hidden="true" />
              */}
             <MenuIcon />
@@ -40,7 +41,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden  sm:flex space-x-4  text-sm font-medium">
+        <div className="hidden  sm:flex space-x-4 text-[#aca977] text-sm sm:text-[15px] font-medium">
           <a className='cursor-pointer' onClick={() => scrollSection("ES")}>About Us</a>
           <a className='cursor-pointer' onClick={() => scrollSection("SS")}>Services</a>
           <a className='cursor-pointer' onClick={() => scrollSection("FS")} >Contact Us</a>
@@ -49,7 +50,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute   inset-0 sm:hidden transition-transform duration-300 ${isOpen ? 'translate-y-0 items-center justify-center top-14  z-10' : '-translate-y-full top-0   z-10'
+        className={`absolute   inset-0 sm:hidden transition-transform duration-300 ${isOpen ? 'translate-y-2 items-center justify-center top-14  z-10' : '-translate-y-full top-0   z-10'
           }`}
         id="mobile-menu"
       >
