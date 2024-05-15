@@ -40,7 +40,7 @@ const FormSection = () => {
         <img src={formImage} alt="Contact" className="object-fill  w-full md:h-auto" />
       </div>
       <div className="w-full md:w-1/2 h-full px-4 md:px-8">
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block font-bold mb-2">Name:</label>

@@ -34,8 +34,7 @@ const Navbar = () => {
             aria-expanded="false"
           >
             <span className="sr-only ">Open main menu</span>
-            {/* <MenuIcon className="h-6 w-6" aria-hidden="true" />
-             */}
+
             <MenuIcon />
           </button>
         </div>
@@ -56,7 +55,7 @@ const Navbar = () => {
       >
         <div className="px-2 pt-2  pb-3  w-full h-[9rem] bg-[#2B3339] text-gray-300 space-y-1">
 
-          <a onClick={() => scrollSection("ES")} className=" block px-3 py-2 text-base font-medium">About Us</a>
+          <a onClick={() => scrollSection("ES")} className=" block px-3 py-2 text-base font-medium">About Me</a>
           <a onClick={() => scrollSection("SS")} className=" block px-3 py-2 text-base font-medium">Services</a>
           <a onClick={() => scrollSection("FS")} className=" block px-3 py-2 text-base font-medium">Contact Us</a>
         </div>
