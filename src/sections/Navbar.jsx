@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from "../assets/logo.png"
 import SegmentIcon from '@mui/icons-material/Segment';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import "../index.css"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const scrollSection = (val) => {
@@ -15,11 +15,11 @@ const Navbar = () => {
     else if (val == "ES") {
       document.getElementById("experiencesection").scrollIntoView()
     }
-
+    // bg-[#183247]  
   }
   return (
-    <nav className="bg-[#183247]  shadow-2xl shadow-yellow-100  ">
-      <div className="max-w-7xl mx-auto px-10 flex justify-between items-center h-16">
+    <nav className="bg-[#182c3b]  shadow-2xl shadow-yellow-100  ">
+      <div className="max-w-7xl  mx-auto px-10 flex justify-between items-center h-16">
         <div className="flex items-center">
           <img src={logo} className="font-bold w-24 mix-blend-screen h-16 bg-transparent text-lg" />
         </div>
@@ -33,14 +33,14 @@ const Navbar = () => {
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
-            <span className="sr-only ">Open main menu</span>
+            <span className="sr-only   ">Open main menu</span>
 
-            <MenuIcon />
+            <MenuIcon className='' />
           </button>
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden  sm:flex space-x-4 text-[#aca977] text-sm sm:text-[15px] font-medium">
+        <div className="hidden  sm:flex space-x-4 text-[#bebb81] text-sm sm:text-[15px] font-medium">
           <a className='cursor-pointer' onClick={() => scrollSection("ES")}>About Us</a>
           <a className='cursor-pointer' onClick={() => scrollSection("SS")}>Services</a>
           <a className='cursor-pointer' onClick={() => scrollSection("FS")} >Contact Us</a>
@@ -53,7 +53,7 @@ const Navbar = () => {
           }`}
         id="mobile-menu"
       >
-        <div className="px-2 pt-2  pb-3  w-full h-[9rem] bg-[#2B3339] text-gray-300 space-y-1">
+        <div className="px-2 pt-2  pb-3  w-full h-[9rem] bg-[#2B3339] text-[#b6b48d] space-y-1">
 
           <a onClick={() => scrollSection("ES")} className=" block px-3 py-2 text-base font-medium">About Me</a>
           <a onClick={() => scrollSection("SS")} className=" block px-3 py-2 text-base font-medium">Services</a>
