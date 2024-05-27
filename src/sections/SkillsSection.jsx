@@ -94,7 +94,7 @@ const SkillsSection = () => {
 
       <div className="container mx-auto">
 
-        <Marquee speed={120} className='mt-4' direction="left" gradientColor='#223a4b' gradientWidth={20} gradient>
+        <Marquee speed={120} pauseOnClick={true} pauseOnHover={true} className='mt-4' direction="left" gradientColor='#223a4b' gradientWidth={20} gradient>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-fuchsia-400">HTML</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-purple-600">CSS</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-amber-200">JavaScript</p>
@@ -114,7 +114,7 @@ const SkillsSection = () => {
         </Marquee>
 
 
-        <Marquee className='' speed={110} direction="right" gradientColor='#223a4b' gradientWidth={20} gradient>
+        <Marquee className='' pauseOnClick={true} pauseOnHover={true} speed={110} direction="right" gradientColor='#223a4b' gradientWidth={20} gradient>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-fuchsia-400">Node Js</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-teal-400">Express Js</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-green-500">MongoDB</p>

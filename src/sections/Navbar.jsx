@@ -38,7 +38,7 @@ const Navbar = () => {
             <MenuIcon className='' />
           </button>
         </div>
-
+        {/* #90936E */}
         {/* Desktop Links */}
         <div className="hidden  sm:flex space-x-4 text-[#bebb81] text-sm sm:text-[15px] font-medium">
           <a className='cursor-pointer' onClick={() => scrollSection("ES")}>About Us</a>
