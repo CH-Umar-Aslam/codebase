@@ -9,8 +9,10 @@ import ProjectSection from './sections/ProjectSection'
 import FormSection from './sections/FormSection'
 import FooterSection from './sections/FooterSection'
 
+
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
         <ExperienceSection />
         <ProjectSection />
         <FormSection />
+
 
       </div>
       <FooterSection /></>

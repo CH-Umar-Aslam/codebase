@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         {/* #90936E */}
         {/* Desktop Links */}
-        <div className="hidden  sm:flex space-x-4 text-[#bebb81] text-sm sm:text-[15px] font-medium">
+        <div className="hidden  sm:flex space-x-4 text-white text-sm sm:text-[15px] font-medium">
           <a className='cursor-pointer' onClick={() => scrollSection("ES")}>About Us</a>
           <a className='cursor-pointer' onClick={() => scrollSection("SS")}>Services</a>
           <a className='cursor-pointer' onClick={() => scrollSection("FS")} >Contact Us</a>
@@ -53,7 +53,7 @@ const Navbar = () => {
           }`}
         id="mobile-menu"
       >
-        <div className="px-2 pt-2  pb-3  w-full h-[9rem] bg-[#2B3339] text-[#b6b48d] space-y-1">
+        <div className="px-2 pt-2  pb-3  w-full h-[9rem] bg-[#2B3339] text-white space-y-1">
 
           <a onClick={() => scrollSection("ES")} className=" block px-3 py-2 text-base font-medium">About Me</a>
           <a onClick={() => scrollSection("SS")} className=" block px-3 py-2 text-base font-medium">Services</a>

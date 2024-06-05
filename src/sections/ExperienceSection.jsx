@@ -2,10 +2,10 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div id="experiencesection" className="bg-[#1a2e3d]  mb-[8%] p-6 rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold text-gray-100 mb-4">Experience</h2>
+    <div id="experiencesection" className="bg-[#202a4c]  mb-[8%] p-6 rounded-lg shadow-md">
+      <h2 className="text-3xl font-bold text-center  text-gray-100 mb-4">Experience</h2>
       <div className="border-l-4 border-blue-500 pl-4">
-        <h3 className="text-xl font-semibold text-gray-400">React.js Developer at <a href="https://recgenz.com" className="text-blue-600 hover:underline">RecGenz</a></h3>
+        <h3 className="text-xl font-semibold text-gray-400">FrontEnd Engineer at <a href="https://recgenz.com" className="text-blue-600 hover:underline">RecGenz</a></h3>
         <p className="text-slate-300 mb-2 font-thin">January 2024 - April 2024</p>
 
         <ul className='pl-1 bg-[#213748] text-[15px] sm:text-[16px] text-white p-4 '>

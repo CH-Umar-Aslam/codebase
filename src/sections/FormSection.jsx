@@ -36,7 +36,7 @@ const FormSection = () => {
   return (
     <div id="formsection" className="flex flex-wrap my-10 sm:my-20"
     >
-      <div className="w-full grid   place-items-center  2xl:place-content-end md:w-1/2 px-1">
+      <div className="w-full grid   place-items-center  place-content-end md:w-1/2 px-1">
         <img src={formImage} alt="Contact" className="object-fill  w-full md:h-auto" />
       </div>
       <div className="w-full md:w-1/2 h-full px-4 md:px-8">

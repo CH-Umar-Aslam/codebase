@@ -18,7 +18,7 @@ const FooterSection = () => {
           <a href="https://github.com/CH-Umar-Aslam/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
             <GitHubIcon />
           </a>
-          <a href="https://www.linkedin.com/in/ch-umar-aslam-b84686252" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+          <a href="https://www.linkedin.com/in/ch-umar-aslam" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
             <LinkedInIcon />
           </a>
 

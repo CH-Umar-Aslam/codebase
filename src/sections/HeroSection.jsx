@@ -1,6 +1,7 @@
 import React from 'react';
-import heroImage from "../assets/hero_image4.png";
+import heroImage from "../assets/crop2.png";
 import resume from "../assets/Resume.pdf"
+import "../index.css"
 const HeroSection = () => {
   return (
     <div
@@ -14,12 +15,12 @@ const HeroSection = () => {
           <h1 className="text-4xl lg:text-6xl text-gray-300 font-bold mb-4 text-center lg:text-left">Hello, I'm Umar Aslam</h1>
           <p className="text-lg font-medium lg:text-[22px] text-gray-100 mb-8  text-center lg:text-left">Full Stack Developer</p>
           {/* bg-[#3e464c] */}
-          <a download="Resume_UmarAslam" href={resume} className=" bg-[#aca977] text-[#ffffff] hover:bg-[#817d3a] font-bold py-3 px-6 rounded inline-block shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Download CV</a>
+          <a download="Resume_UmarAslam" href={resume} className=" bg-blue-500 text-[#ffffff] hover:bg-blue-600 font-bold py-3 px-6 rounded inline-block shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Download CV</a>
         </div>
 
         {/* Image Section */}
-        <div className="  sm:max-w-[400px]  2xl:max-w-[700px] h-[17rem] w-[17rem] mt-8 lg:mt-0 rounded-[100%] mix-blend-lighten border-2 border-gray-400 bg-white  overflow-hidden  flex justify-center">
-          <img src={heroImage} alt="Hero" className='object-fit object-cover w-[270px] h-full' />
+        <div className="  sm:max-w-[400px] 2xl:max-w-[700px] h-[17rem] w-[17rem] mt-8 lg:mt-0 rounded-[100%]  border-2 border-blue-400  overflow-hidden  flex justify-center">
+          <img src={heroImage} alt="Hero" className='object-fit  object-cover w-[270px] h-full' />
         </div>
 
 

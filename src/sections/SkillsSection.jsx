@@ -85,10 +85,10 @@ const SkillsSection = () => {
   };
 
   return (
-    <section id="skillsection" className="py-12 lg:px-0 rounded-lg mb-[8%] overflow-hidden bg-[#1a2e3d]">
+    <section id="skillsection" className="py-12 lg:px-0 rounded-lg mb-[8%] overflow-hidden shadow-lg  bg-[#202a4c]">
       <div >
-        <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-        <h2 className='rounded-lg font-medium m-2 p-2 sm:p-2 text-center bg-[#223a4b] text-green-600  '>Currently Mastering Mern Stack</h2>
+        <h2 className="text-3xl   font-bold text-center mb-8">Skills</h2>
+        <h2 className='rounded-lg mx-auto font-medium m-2 p-2 sm:p-2 text-center bg-[#274257] text-green-600  '>Currently Building Mern Stack Projects</h2>
 
       </div>
 
@@ -126,6 +126,7 @@ const SkillsSection = () => {
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-fuchsia-400">Node Js</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-teal-400">Express Js</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-green-500">MongoDB</p>
+          <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-emerald-200 -500">SQL</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-sky-400">Data Modeling</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-yellow-400">Rest API's</p>
           <p className="bg-[#223a4b] m-2 text-xl flex space-x-5 px-6 py-2 font-bold cursor-pointer rounded-md text-lime-600">API Integration</p>
