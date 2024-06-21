@@ -8,6 +8,7 @@ import ExperienceSection from './sections/ExperienceSection'
 import ProjectSection from './sections/ProjectSection'
 import FormSection from './sections/FormSection'
 import FooterSection from './sections/FooterSection'
+import TestimonialCard from './sections/TestimonialCard'
 
 
 
@@ -23,7 +24,7 @@ function App() {
         <ExperienceSection />
         <ProjectSection />
         <FormSection />
-
+        {/* <TestimonialCard /> */}
 
       </div>
       <FooterSection /></>
