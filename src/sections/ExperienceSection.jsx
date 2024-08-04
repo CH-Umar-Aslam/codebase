@@ -2,8 +2,9 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div id="experiencesection" className="bg-[#202a4c]  mb-[8%] p-6 rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold text-center  text-gray-100 mb-4">Experience</h2>
+    <div id="experiencesection" className="  mb-[8%] p-6 rounded-lg shadow-md">
+      <h2 className="text-3xl font-bold  text-gray-100 mb-4">Experience</h2>
+
       <div className="border-l-4 border-blue-500 pl-4">
         <h3 className="text-xl font-semibold text-gray-400">FrontEnd Engineer at <a href="https://recgenz.com" className="text-blue-600 hover:underline">RecGenz</a></h3>
         <p className="text-slate-300 mb-2 font-thin">January 2024 - April 2024</p>
@@ -22,6 +23,7 @@ const Experience = () => {
 
 
       </div>
+      <p className='font-bold text-xl py-3'>Currently Working at Tmr Consulting</p>
     </div>
   );
 };

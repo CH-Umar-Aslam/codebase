@@ -10,7 +10,7 @@ body {
   font-family: "Arimo";
 }
 .hero-section{
-  height : calc(100vh - 64px);
+  height : calc(75vh - 64px);
 }
 .scrollable-element {
   overflow-y: scroll;
@@ -30,7 +30,7 @@ body {
 
 @media screen and (max-width:1020px) {
   .hero-section{
-    height : calc(95vh - 64px);
+    height : calc(88vh - 64px);
   }
   
 }
