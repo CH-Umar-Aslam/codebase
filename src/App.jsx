@@ -12,6 +12,7 @@ import TestimonialCard from './sections/TestimonialCard'
 
 
 
+
 function App() {
 
 
@@ -27,7 +28,8 @@ function App() {
         {/* <TestimonialCard /> */}
 
       </div>
-      <FooterSection /></>
+      <FooterSection />
+    </>
   )
 }
 
