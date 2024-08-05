@@ -8,7 +8,7 @@ const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="FTS" className="bg-[#1a2e3d] text-white py-6">
+    <footer id="FTS" className="bg-[#222E47] text-white py-6">
       <div className="container mx-auto flex flex-row items-center justify-between px-4">
         <div className="flex items-center  lg:mb-0">
           <span className="text-lg mr-2"><CopyrightIcon /> | {currentYear}</span>

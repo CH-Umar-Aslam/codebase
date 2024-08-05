@@ -18,7 +18,7 @@ const Navbar = () => {
     // bg-[#183247]  
   }
   return (
-    <nav className="bg-[#182c3b]  shadow-2xl shadow-yellow-100  ">
+    <nav className="bg-[#2D2F45] shadow-xl shadow-sky-200  ">
       <div className="max-w-7xl  mx-auto px-10 flex justify-between items-center h-16">
         <div className="flex items-center">
           <img src={logo} className="font-bold w-24 mix-blend-screen h-16 bg-transparent text-lg" />
@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* #90936E */}
         {/* Desktop Links */}
         <div className="hidden  sm:flex space-x-4 text-white text-sm sm:text-[15px] font-medium">
-          <a className='cursor-pointer' onClick={() => scrollSection("ES")}>About Us</a>
+          <a className='cursor-pointer' onClick={() => scrollSection("ES")}>About Me</a>
           <a className='cursor-pointer' onClick={() => scrollSection("SS")}>Services</a>
           <a className='cursor-pointer' onClick={() => scrollSection("FS")} >Contact Us</a>
         </div>

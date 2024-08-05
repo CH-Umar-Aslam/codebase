@@ -13,7 +13,9 @@ export default {
       },
       fontFamily: {
         Poppins: "Reddit-Sans"
-      }
+
+      },
+
     },
   },
   plugins: [],
