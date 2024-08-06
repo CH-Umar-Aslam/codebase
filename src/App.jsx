@@ -30,25 +30,31 @@ function App() {
 
 
   return (
-    <div className='max-w-7xl mx-auto'>
+
+    <div>
+      <Navbar />
+
+      <div className='container xl:max-w-6xl mx-auto '>
 
 
-      <motion.div style={{ scaleX }} className='fixed origin-left z-50  bg-blue-800 top-0 left-0 right-0 h-[4px] rounded-lg ' />
+        <motion.div style={{ scaleX }} className='fixed origin-left z-50  bg-blue-800 top-0 left-0 right-0 h-[4px] rounded-lg ' />
 
-      <Navbar /><div className='mx-4 '>
-        <HeroSection />
-        <Stats />
-        <ExperienceSection />
-        <SkillsSection />
-        <ProjectSection />
-        <FormSection />
-        {/* <TestimonialCard /> */}
+        <div className=''>
+          <HeroSection />
+          <Stats />
+          <ExperienceSection />
+          <SkillsSection />
+          <ProjectSection />
+          <FormSection />
+          {/* <TestimonialCard /> */}
 
-      </div>
+        </div>
+
+
+
+      </div >
       <FooterSection />
-
-
-    </div >
+    </div>
   )
 }
 

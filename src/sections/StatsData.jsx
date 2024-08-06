@@ -3,7 +3,7 @@ import CountUp from "react-countup"
 import { StatsData } from "../data/social.js"
 const Stats = () => {
   return (
-    <section className="container  mx-auto mb-12 ">
+    <section className=" mb-12 ">
 
       <div className="border   border-blue-400 shadow-2xl  shadow-sky-300  py-12  text-gray-300 lg:px-3   ">
 

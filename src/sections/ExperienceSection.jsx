@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div id="experiencesection" className="max-w-5xl mx-auto sm:border border-blue-200 mb-[8%] p-2 rounded-lg shadow-md">
+    <div id="experiencesection" className=" sm:border border-blue-200 mb-[8%] p-2 rounded-lg shadow-md">
       <h2 className="text-3xl font-bold  text-gray-100 mb-4">Experience</h2>
 
       <div className="border-l-2 border-blue-500 pl-4">
