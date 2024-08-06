@@ -7,8 +7,8 @@ import project_image4 from "../assets/pg_4.png"
 const ProjectSection = ({ img, title, url }) => {
   return (
 
-    <div className='flex flex-col mt-28 '>
-      <h2 className="text-2xl font-bold text-center  text-gray-100 mb-4">Projects</h2>
+    <div className='flex flex-col mt-[100px]'>
+      <h2 className="text-3xl  font-bold text-center  text-gray-100 ">Projects</h2>
 
       <div className="flex flex-col  lg:h-[80vh]   justify-center items-center mt-8 mb-8 relative">
 
