@@ -4,7 +4,7 @@ import { StatsData } from "../data/social.js"
 const Stats = () => {
   return (
     <section className="container  mx-auto mb-12 ">
-      <h1 className="text-3xl font-bold my-4 ">Stats</h1>
+
       <div className="border   border-blue-400 shadow-2xl  shadow-sky-300  py-12  text-gray-300 lg:px-3   ">
 
         <div className="container mx-auto pl-3 ">

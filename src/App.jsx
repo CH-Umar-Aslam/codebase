@@ -30,21 +30,23 @@ function App() {
 
 
   return (
-    <div>
+    <div className='max-w-7xl mx-auto'>
+
 
       <motion.div style={{ scaleX }} className='fixed origin-left z-50  bg-blue-800 top-0 left-0 right-0 h-[4px] rounded-lg ' />
 
-      <Navbar /><div className='sm:container  mx-4 sm:mx-auto'>
+      <Navbar /><div className='mx-4 '>
         <HeroSection />
-        <SkillsSection />
-        <ExperienceSection />
         <Stats />
+        <ExperienceSection />
+        <SkillsSection />
         <ProjectSection />
         <FormSection />
         {/* <TestimonialCard /> */}
 
       </div>
       <FooterSection />
+
 
     </div >
   )

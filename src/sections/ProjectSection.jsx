@@ -7,12 +7,12 @@ import project_image4 from "../assets/pg_4.png"
 const ProjectSection = ({ img, title, url }) => {
   return (
 
-    <div className='flex flex-col mt-20 gap-10'>
+    <div className='flex flex-col mt-28 '>
       <h2 className="text-2xl font-bold text-center  text-gray-100 mb-4">Projects</h2>
 
-      <div className="flex flex-col  h-[50vh] lg:h-[80vh]   justify-center items-center mt-8 mb-8 relative">
+      <div className="flex flex-col  lg:h-[80vh]   justify-center items-center mt-8 mb-8 relative">
 
-        <div className="max-w-xl max-h-[600px]  bg-transparent p-8 rounded-lg shadow-md relative z-10">
+        <div className="max-w-xl max-h-[600px]  bg-transparent p-4  sm:p-6 rounded-lg shadow-md relative z-10">
           <a href="http://recgenz.com" target='_blank' >
             <img src={project_image} alt="Project" className="w-full h-auto mb-4 rounded-lg" />
           </a>
@@ -26,7 +26,7 @@ const ProjectSection = ({ img, title, url }) => {
       </div>
       {/* pj-2 */}
       <div className="flex flex-col h-[50vh] lg:h-[80vh]   justify-center items-center mt-8 mb-8 relative">
-        <div className="max-w-xl max-h-[600px]   bg-transparent p-8 rounded-lg shadow-xl relative z-10">
+        <div className="max-w-xl max-h-[600px]   bg-transparent p-4  sm:p-6 rounded-lg shadow-xl relative z-10">
           <a href="https://umars-ecommerce.vercel.app/" target='_blank' >
             <img src={project_image2} alt="Project" className="w-full h-auto mb-4 rounded-lg" />
           </a>
@@ -42,7 +42,7 @@ const ProjectSection = ({ img, title, url }) => {
       {/* pj-3 */}
 
       <div className="flex flex-col h-[50vh] lg:h-[80vh]   justify-center items-center mt-8 mb-8 relative">
-        <div className="max-w-xl max-h-[600px]   bg-transparent p-8 rounded-lg shadow-xl relative z-10">
+        <div className="max-w-xl max-h-[600px]   bg-transparent p-4  sm:p-6 rounded-lg shadow-xl relative z-10">
           <a href="https://password-picker.netlify.app/" target='_blank' >
             <img src={project_image3} alt="Project" className="w-full h-auto mb-4 rounded-lg" />
           </a>
@@ -58,7 +58,7 @@ const ProjectSection = ({ img, title, url }) => {
       {/* pj-4 */}
 
       <div className="flex flex-col h-[50vh] lg:h-[80vh]   justify-center items-center mt-8 mb-8 relative">
-        <div className="max-w-xl max-h-[600px]   bg-transparent p-8 rounded-lg shadow-xl relative z-10">
+        <div className="max-w-xl max-h-[600px]   bg-transparent p-4  sm:p-6 rounded-lg shadow-xl relative z-10">
           <a href="https://react18-todo.vercel.app/" target='_blank' >
             <img src={project_image4} alt="Project" className="w-full h-auto mb-4 rounded-lg" />
           </a>
