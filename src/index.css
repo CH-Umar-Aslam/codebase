@@ -30,7 +30,7 @@ body {
 
 @media screen and (max-width:1020px) {
   .hero-section{
-    height : calc(88vh - 64px);
+    height : calc(94vh - 64px);
   }
   
 }

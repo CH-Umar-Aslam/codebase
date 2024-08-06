@@ -18,7 +18,7 @@ const Navbar = () => {
     // bg-[#183247]  
   }
   return (
-    <nav className="bg-[#2D2F45] shadow-xl shadow-sky-200  ">
+    <nav className="bg-[#2D2F45] shadow-2xl shadow-sky-300  ">
       <div className="max-w-7xl  mx-auto px-10 flex justify-between items-center h-16">
         <div className="flex items-center">
           <img src={logo} className="font-bold w-24 mix-blend-screen h-16 bg-transparent text-lg" />
